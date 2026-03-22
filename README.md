@@ -1,38 +1,23 @@
-# .
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+# live-withdrawal-app项目
+这是第一个前端学习项目
+##这个项目是干嘛的？
+这是一个用户管理提现的页面，可以看到用户的个人信息、提现记录、直播记录银行卡信息等
+#这个项目用什么写的
+Vue 3：写页面的代码，比如里面的组件
+Vite:用于跑项目
+Git和GitHub：把代码提交到网上
+##分析代码
+sec/assets/mages：放图片(头像还有背景图标背景)
+src/components：放小组件的代码(菜单列表分页等）
+src/view：主要页面(提现银行卡直播记录等)
+App.vue:根组件
+main.js：项目入口文件
+##怎么跑起来
+1.打开终端:npm install安装
+2.输入npm run dev跑起来
+3.浏览器打开http://localhost:5173就能看到页面
+##学习成果
+1.学会了Vue 3写页面和组件
+2.学会用Git把代码上传
+3.启动和运行前端项目
+4.额外学习调整了页面的样式
