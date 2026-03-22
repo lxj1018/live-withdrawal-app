@@ -1,0 +1,220 @@
+/* 全局基础样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei", 微软雅黑, Arial;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 14px;
+}
+
+/* 整个页面容器 - 使用弹性布局分左右两边 */
+.app-container {
+  display: flex;
+}
+
+/* 侧边栏 - 固定在左边 */
+.sidebar {
+  width: 280px;
+  background: white;
+  box-shadow: 0 2px 8px #eee;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* 侧边栏 - 用户信息区域 */
+.user-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 圆形头像 */
+.avatar {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* 用户名 */
+.username {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* 用户等级 */
+.level {
+  font-size: 12px;
+  color: #999;
+}
+
+/* 用户ID */
+.user-id {
+  font-size: 12px;
+  color: #999;
+}
+
+/* 侧边栏 - 菜单列表 */
+.menu-list {
+  margin-top: 20px;
+}
+
+/* 每个菜单项 */
+.menu-item {
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 当前选中的菜单项 */
+.menu-item.active {
+  background-color: #e6f7ff;
+  color: #1890ff;
+}
+
+/* 鼠标移到菜单项上的效果 */
+.menu-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* 右侧主要内容区域 */
+.main-content {
+  margin-left: 300px;
+  padding: 20px;
+  max-width: 900px;
+}
+
+/* 通用卡片样式 - 所有白色卡片都用这个 */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+/* 数据卡片 - 用来展示星星和收入 */
+.data-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 每个数据项 */
+.data-item {
+  text-align: center;
+}
+
+/* 大数字 - 用来突出显示数量 */
+.big-number {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* 小字说明 */
+.small-text {
+  font-size: 12px;
+  color: #999;
+}
+
+/* 竖线分隔符 - 用来分开左右两个数据 */
+.divider {
+  width: 1px;
+  height: 60px;
+  background: #eee;
+  margin: 0 20px;
+}
+
+/* 提现卡片 - 用来输入提现金额 */
+.withdraw-card {
+  text-align: center;
+}
+
+/* 提现输入框和按钮的容器 */
+.withdraw-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* 提现输入框 */
+.withdraw-input {
+  width: 280px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* 提现按钮 */
+.withdraw-btn {
+  padding: 10px 40px;
+  background-color: #40E0D0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 提现规则文字 */
+.rule-text {
+  font-size: 12px;
+  color: #999;
+}
+
+/* 提现规则图标 */
+.rule-icon {
+  cursor: pointer;
+}
+
+/* 表格标题 */
+.table-title {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* 记录表格 */
+.record-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* 表格表头 */
+.table-header {
+  background-color: #f9f9f9;
+}
+
+.table-header th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+/* 表格每一行 */
+.table-row td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* 处理中的状态文字颜色 */
+.status-processing {
+  color: #40E0D0;
+}
+
+/* 成功状态文字颜色 */
+.status-success {
+  color: #52C41A;
+}
+
+/* 失败状态文字颜色 */
+.status-fail {
+  color: #FF4D4F;
+}
